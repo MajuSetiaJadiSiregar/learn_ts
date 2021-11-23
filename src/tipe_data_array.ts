@@ -12,3 +12,12 @@ daftarMataKuliah = ["Bahasa Indonesia", "Matematika"];
 
 
 let profileMahasiswa = ["Lintang Ts", 25, 3.4];
+
+/**
+ * tuple => merupakan tipe data array
+ * beda nya pada tuple value dan panjang array
+ * sudah di tentukan.
+ */
+
+let campus: [string, number, boolean];
+campus = ["Universitas Indonesia", 25, true];
