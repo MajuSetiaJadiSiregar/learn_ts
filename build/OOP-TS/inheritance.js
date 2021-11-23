@@ -15,10 +15,11 @@ class User {
 }
 exports.User = User;
 class Admin extends User {
-    constructor() {
-        super(...arguments);
+    constructor(phone, name, age) {
+        super(name, age);
         this.read = true;
         this.write = true;
+        this.phone = phone;
     }
     GetRole() {
         return {
@@ -28,6 +29,6 @@ class Admin extends User {
     }
     ;
 }
-let adminOne = new Admin("Lintang", 23);
+let adminOne = new Admin("0212015", "Lintang Js", 23);
 adminOne.setName('Indonesia');
 console.log(adminOne.GetRole());

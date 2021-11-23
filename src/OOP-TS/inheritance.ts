@@ -18,6 +18,12 @@ class Admin extends User {
    
    public read:boolean = true;
    public write:boolean = true;
+   public phone:string;
+
+   constructor(phone:string, name:string, age:number){
+      super(name, age);
+      this.phone = phone;
+   }
 
    GetRole():{read:boolean, write:boolean}{
       return {
@@ -27,6 +33,6 @@ class Admin extends User {
    };
 }
 
-let adminOne = new Admin("Lintang", 23);
+let adminOne = new Admin("0212015", "Lintang Js", 23);
 adminOne.setName('Indonesia');
 console.log(adminOne.GetRole());
