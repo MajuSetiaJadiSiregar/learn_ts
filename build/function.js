@@ -11,3 +11,7 @@ function tampaReturn() {
     console.log('No return');
 }
 tampaReturn();
+let age = 123;
+const Add = (valOne, valTwo) => {
+    return valOne + valTwo;
+};

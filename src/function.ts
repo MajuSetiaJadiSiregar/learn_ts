@@ -13,3 +13,17 @@ function tampaReturn():void{
 }
 
 tampaReturn();
+
+/**
+ * function sebagai tipe data
+ */
+
+type Age = number;
+let age:Age = 123;
+
+
+type tambah = (valOne: number, valTwo: number) => number;
+const Add:tambah = (valOne:number, valTwo:number) => {
+   return valOne + valTwo;
+}
+
