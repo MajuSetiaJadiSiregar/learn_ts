@@ -19,8 +19,21 @@ class Admin extends User {
    public read:boolean = true;
    public write:boolean = true;
    public phone:string;
-
    private _email:string = "";
+
+   /**
+    * static biasa
+    */
+   static ip_address:string = 'ip_address';
+   /**
+    * static metod
+    */
+
+   static sayHello():string {
+      return 'hai...';
+   }
+
+   
 
    constructor(phone:string, name:string, age:number){
       super(name, age);
@@ -47,3 +60,5 @@ let adminOne = new Admin("0212015", "Lintang Js", 23);
 adminOne.setName('Indonesia');
 adminOne.email = 'indonesia@gmail.com';
 console.log(adminOne.email);
+console.log(Admin.ip_address);
+console.log(Admin.sayHello());

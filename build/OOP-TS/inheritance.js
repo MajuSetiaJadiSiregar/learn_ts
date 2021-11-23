@@ -22,6 +22,12 @@ class Admin extends User {
         this._email = "";
         this.phone = phone;
     }
+    /**
+     * static metod
+     */
+    static sayHello() {
+        return 'hai...';
+    }
     GetRole() {
         return {
             read: this.read,
@@ -36,7 +42,13 @@ class Admin extends User {
         return this._email;
     }
 }
+/**
+ * static biasa
+ */
+Admin.ip_address = 'ip_address';
 let adminOne = new Admin("0212015", "Lintang Js", 23);
 adminOne.setName('Indonesia');
 adminOne.email = 'indonesia@gmail.com';
 console.log(adminOne.email);
+console.log(Admin.ip_address);
+console.log(Admin.sayHello());
