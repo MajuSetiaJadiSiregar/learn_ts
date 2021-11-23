@@ -1,0 +1,1 @@
+console.log('Pakai Ts pasti bisa lah');
